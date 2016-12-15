@@ -1,0 +1,29 @@
+en:
+  lita:
+    handlers:
+      yandex_domains:
+        help:
+          show_human_emails:
+            syntax: yandex show all human emails
+            desc: Show all emails that not include mailing lists
+          show_maillists:
+            syntax: yandex show all maillists
+            desc: Show all maillists
+          create_email:
+            syntax: yandex add email <email>
+            desc: Add email with random generated password
+          delete_email:
+            syntax: yandex delete email <email>
+            desc: Delete user email
+          create_maillist:
+            syntax: yandex add maillist <email>
+            desc: Add maillist
+          delete_maillist:
+            syntax: yandex delete maillist <email>
+            desc: Delete maillist
+          add_subscriber:
+            syntax: yandex add <email> to maillist <email>
+            desc: Add subcriber to maillist
+          delete_subscriber:
+            syntax: yandex delete <email> from maillist <email>
+            desc: Remove subcriber from maillist
