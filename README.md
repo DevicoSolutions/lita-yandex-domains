@@ -47,7 +47,7 @@ yandex add <email> to maillist <email> - Add subcriber to maillist
 yandex delete <email> from maillist <email> - Remove subcriber from maillist
 ```
 
-*Note:* The above commands except show commands require that the user be a member of the `:yandex_admins` authorization group.
+*Note:* The above commands except "show" commands require that the user be a member of the `:yandex_admins` authorization group.
 For example: to add admin for ```lita yandex domain``` run the following command - ``` Lita, auth add username yandex_admins ```
 
 ## License
