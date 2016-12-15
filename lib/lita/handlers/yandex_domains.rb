@@ -164,7 +164,7 @@ module Lita
         accounts['accounts'].each do |account|
           emails.push(account['login']) if account['maillist'] == maillist
         end
-        response.reply(emails)
+        response.reply(emails.sort)
       end
 
       def error_message(domain)
