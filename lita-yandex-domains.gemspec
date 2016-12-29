@@ -1,6 +1,6 @@
 Gem::Specification.new do |spec|
   spec.name          = "lita-yandex-domains"
-  spec.version       = "0.1.1"
+  spec.version       = "0.1.2"
   spec.authors       = ["Devico Solutions"]
   spec.email         = ["info@devico.io"]
   spec.description   = "Lita handler to interact with yandex domain API"

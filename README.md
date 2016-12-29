@@ -39,9 +39,9 @@ Please note
 ```
 yandex show all human emails - Show all emails that not include mailing lists
 yandex show all maillists - Show all maillists
-yandex add email <email> - Add email with random generated password
+yandex create email <email> - Create new email with random generated password
 yandex delete email <email> - Delete user email
-yandex add maillist <email> - Add maillist
+yandex create maillist <email> - Create new maillist
 yandex delete maillist <email> - Delete maillist
 yandex add <email> to maillist <email> - Add subcriber to maillist
 yandex delete <email> from maillist <email> - Remove subcriber from maillist

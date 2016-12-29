@@ -10,14 +10,14 @@ en:
             syntax: yandex show all maillists
             desc: Show all maillists
           create_email:
-            syntax: yandex add email <email>
-            desc: Add email with random generated password
+            syntax: yandex create email <email>
+            desc: Create new email with random generated password
           delete_email:
             syntax: yandex delete email <email>
             desc: Delete user email
           create_maillist:
-            syntax: yandex add maillist <email>
-            desc: Add maillist
+            syntax: yandex create maillist <email>
+            desc: Create new maillist
           delete_maillist:
             syntax: yandex delete maillist <email>
             desc: Delete maillist
