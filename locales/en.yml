@@ -9,6 +9,9 @@ en:
           show_maillists:
             syntax: yandex show all maillists
             desc: Show all maillists
+          show_subscribers:
+            syntax: yandex show subscribers for maillist <email>
+            desc: Show subcribers for maillist
           create_email:
             syntax: yandex create email <email>
             desc: Create new email with random generated password

@@ -89,6 +89,15 @@ module Lita
           }
       )
 
+      route(
+          /^yandex\sshow\ssubscribers\sfor\smaillist\s#{MAILLIST_PATTERN}$/,
+          :show_subscribers,
+          command: true,
+          help: {
+              t('help.show_subscribers.syntax') => t('help.show_subscribers.desc')
+          }
+      )
+
       def create_email(response)
         email = response.match_data['email']
         domain = email.split('@').last
@@ -153,6 +162,15 @@ module Lita
         response.reply(message)
       end
 
+      def show_subscribers(response)
+        emails = []
+        maillist = response.match_data['maillist']
+        message = yandex_client.subscription_sublist(config.domain, maillist)
+        message['subscribers'].each do |subscriber|
+          emails.push(subscriber)
+        end
+        response.reply(emails.sort)
+      end
 
       Lita.register_handler(self)
 

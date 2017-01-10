@@ -13,8 +13,9 @@ describe Lita::Handlers::YandexDomains, lita_handler: true do
     it { is_expected.to route_command('yandex create maillist maillist@test.com').to(:create_maillist).with_authorization_for(:yandex_admins) }
     it { is_expected.to route_command('yandex delete maillist maillist@test.com').to(:delete_maillist).with_authorization_for(:yandex_admins) }
     it { is_expected.to route_command('yandex show all maillists').to(:show_all_maillists) }
-    it { is_expected.to route_command('yandex add test@devico.io to maillist maillist@test.com').to(:add_subscriber).with_authorization_for(:yandex_admins) }
-    it { is_expected.to route_command('yandex delete test@devico.io from maillist maillist@test.com').to(:remove_subscriber).with_authorization_for(:yandex_admins) }
+    it { is_expected.to route_command('yandex add test@test.io to maillist maillist@test.com').to(:add_subscriber).with_authorization_for(:yandex_admins) }
+    it { is_expected.to route_command('yandex delete test@test.io from maillist maillist@test.com').to(:remove_subscriber).with_authorization_for(:yandex_admins) }
+    it { is_expected.to route_command('yandex show subscribers for maillist subscription@test.io').to(:show_subscribers) }
   end
 
 end
