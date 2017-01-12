@@ -1,6 +1,6 @@
 Gem::Specification.new do |spec|
   spec.name          = "lita-yandex-domains"
-  spec.version       = "0.2.0"
+  spec.version       = "0.2.1"
   spec.authors       = ["Devico Solutions"]
   spec.email         = ["info@devico.io"]
   spec.description   = "Lita handler to interact with yandex domain API"
@@ -17,7 +17,7 @@ Gem::Specification.new do |spec|
   spec.required_ruby_version = '>= 2.3.0'
 
   spec.add_runtime_dependency 'lita', '>= 4.7'
-  spec.add_runtime_dependency 'yandex-pdd-2', '~> 0.1.3'
+  spec.add_runtime_dependency 'yandex-pdd-2', '~> 0.1.4'
 
   spec.add_development_dependency 'bundler', '~> 1.3'
   spec.add_development_dependency 'pry-byebug'

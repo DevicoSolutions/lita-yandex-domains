@@ -143,7 +143,12 @@ module Lita
       end
 
       def show_all_maillists(response)
-        show_emails(response, maillist='yes')
+        emails = []
+        message = yandex_client.maillist_list(domain=config.domain)
+        message['maillists'].each do |maillist|
+          emails.push(maillist['maillist'])
+        end
+        response.reply(emails)
       end
 
       def add_subscriber(response)
