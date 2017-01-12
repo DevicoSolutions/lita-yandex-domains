@@ -128,10 +128,8 @@ module Lita
       def create_maillist(response)
         email = response.match_data['maillist']
         domain = email.split('@').last
-        message = nil
         if domain == config.domain
-          status = yandex_client.maillist_add(options = { domain: config.domain, login: email })
-          message = status if status['success'] == 'error'
+          message = yandex_client.maillist_add(options = { domain: config.domain, maillist: email })
         else
           message = error_message(domain)
         end
